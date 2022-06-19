@@ -25,12 +25,13 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-## Installation
+## Installation BD Postgres
 
 ```bash
 $ createdb -U postgres newnectiano
 $ createuser -U postgres -W nectiano
 $ psql -U postgres -c "ALTER DATABASE newnectiano OWNER TO nectiano"
+$ psql -U nectiano -f bd.sql newnectiano
 ```
 ## Installation
 
