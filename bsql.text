@@ -1,0 +1,4 @@
+createdb -U postgres newnectiano
+createuser -U postgres -W nectiano
+psql -U postgres -c "ALTER DATABASE newnectiano OWNER TO nectiano"
+psql -U nectiano -f bd.sql newnectiano
